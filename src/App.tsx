@@ -1,11 +1,19 @@
+import React from 'react';
+import { BrowserRouter   , Routes ,Route, Link}  from "react-router-dom";
+import Map from './map';
+import Form from './form';
 
-import Map from './map'
-function App() {
+function App() {  
   return (
-    <div>
-<Map/>
-    </div>
-   
+ 
+    
+<Routes>
+    <Route path="/" element={<Map/>}/>
+    <Route path="/form" element={<Form/>}/>
+
+
+</Routes>
+
   );
 }
 
